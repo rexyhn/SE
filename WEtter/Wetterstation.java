@@ -16,7 +16,7 @@ public class Wetterstation extends Observable{
 	public void messwerteGeaendert(MessDaten daten){
 		setChanged();
 		notifyObservers(daten);
-		
+		clearChanged();
 	}
 	
 	// Simulation der Wetterdaten ...
